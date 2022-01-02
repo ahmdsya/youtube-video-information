@@ -25,7 +25,7 @@ require "YoutubeVideoInfo.php"; //panggil file YoutubeVideoInfo.php
 ```
 ```sh
 $apiKey = "Youtube-API-KEY"; //Youtube API KEY
-$videoURL = "https://www.youtube.com/watch?v=PiTZFxQC1B4"; //URL Video Youtube
+$videoURL = "Youtube-Video-URL"; //URL Video Youtube
 
 $video = new YoutubeVideoInfo($apiKey); //panggil class dan kirim API Key
 $video->setVideoURL($videoURL); //kirim video url
@@ -39,7 +39,7 @@ echo $video->description; //menampilkan deskripsi video
 echo $video->thumbnail; //menampilkan url gambar thumbnails
 echo $video->tags; //menampilkan data tags video
 echo $video->duration; //menampilkan durasi video dalam detik
-echo $video->durationTimeFormat; //menampilkan durasi video dalam format waktu (ex: 04.21)
+echo $video->durationTimeFormat; //menampilkan durasi video dalam format waktu (ex: 04:21)
 echo $video->viewCount; //menampilkan jumlah viewer
 echo $video->likeCount; //menampilkan jumlah like
 echo $video->commentCount; //menampilkan jumlah komentar
